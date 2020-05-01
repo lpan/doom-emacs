@@ -16,8 +16,7 @@
       :recipe (:host github :repo "Kaali/company-glsl")
       :pin "404cd0694a")))
 
-(if (featurep! +lsp)
-    (package! ccls :pin "17ec7bb4cf")
+(unless (featurep! +lsp)
   (when (package! irony :pin "5f75fc0c92")
     (package! irony-eldoc :pin "0df5831eaa")
     (when (featurep! :checkers syntax)
