@@ -1,3 +1,7 @@
+# lpan
+eshell/history
+org-journal.cache
+
 .local/
 var/
 modules/private
